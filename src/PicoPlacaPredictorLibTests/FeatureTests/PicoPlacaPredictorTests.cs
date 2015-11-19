@@ -1,8 +1,8 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using PicoPlacaPredictorLib;
-using PicoPlacaPredictorLib.BusinessLogic;
 using PicoPlacaPredictorLib.Models;
+using PicoPlacaPredictorLib.BusinessLogic.PicoPlacaConventions;
 
 namespace PicoPlacaPredictorLibTests
 {

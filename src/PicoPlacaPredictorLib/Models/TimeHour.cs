@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PicoPlacaPredictorLib.Models
 {
-    public class TimeHour
+    public class TimeHour : IComparable<TimeHour>
     {
         public int Hour { get; private set; }
         public int Minutes { get; private set; }
@@ -17,6 +17,15 @@ namespace PicoPlacaPredictorLib.Models
             Hour = hour;
             Minutes = minutes;
             Seconds = seconds;
+        }
+
+        public int CompareTo(TimeHour other)
+        {
+            if (Hour != other.Hour)
+                return Hour - other.Hour;
+            if (Minutes != other.Minutes)
+                return Minutes - other.Minutes;
+            return Seconds - other.Seconds; 
         }
     }
 }

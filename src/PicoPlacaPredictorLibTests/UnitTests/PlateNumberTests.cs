@@ -13,14 +13,14 @@ namespace PicoPlacaPredictorLibTests.UnitTests
     {
         [TestMethod]
         [ExpectedException(typeof(ArgumentException))]
-        public void InitPlateNumber_ShouldThrowException()
+        public void InitPlateNumberTest_ShouldThrowException()
         {
             string plate = "AB12332323A";
             PlateNumber plateNumber = new PlateNumber(plate);
         }
 
         [TestMethod]
-        public void InitPlateNumber()
+        public void InitPlateNumberTest()
         {
             string plate = "AB123323239";
             PlateNumber plateNumber = new PlateNumber(plate);

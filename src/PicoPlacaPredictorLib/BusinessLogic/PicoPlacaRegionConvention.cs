@@ -11,7 +11,6 @@ namespace PicoPlacaPredictorLib.BusinessLogic
     {
         public abstract List<HoursInterval> GetStopIntervals();
         public abstract List<Date> GetPublicHolidays();
-        public abstract bool IsThisLawApplicableOnWeekends();
         public abstract Dictionary<int, WeekDay> GetPlacasDayOff();
     }
 }

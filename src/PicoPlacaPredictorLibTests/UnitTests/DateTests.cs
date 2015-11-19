@@ -13,14 +13,14 @@ namespace PicoPlacaPredictorLibTests.UnitTests
     {
         [TestMethod]
         [ExpectedException(typeof(ArgumentException))]
-        public void InitDateWithString_ShouldThrowException()
+        public void InitDateWithStringTest_ShouldThrowException()
         {
             string date = "27/10/YY";
             Date datetime = new Date(date);
         }
 
         [TestMethod]
-        public void InitDateWithString()
+        public void InitDateWithStringTest()
         {
             string date = "27/10/1988";
             Date datetime = new Date(date);

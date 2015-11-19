@@ -40,7 +40,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BusinessLogic\PicoPlacaRegionConvenius.cs" />
+    <Compile Include="BusinessLogic\EcuadorPicoPlacaConvention.cs" />
+    <Compile Include="BusinessLogic\PicoPlacaRegionConvention.cs" />
     <Compile Include="Models\Date.cs" />
     <Compile Include="Models\HoursInterval.cs" />
     <Compile Include="Models\PlateNumber.cs" />

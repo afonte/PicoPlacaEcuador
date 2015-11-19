@@ -7,7 +7,7 @@ using PicoPlacaPredictorLib.Models;
 
 namespace PicoPlacaPredictorLib.BusinessLogic
 {
-    class EcuadorPicoPlacaConvention : PicoPlacaRegionConvention
+    public class EcuadorPicoPlacaConvention : PicoPlacaRegionConvention
     {
         public override List<HoursInterval> GetStopIntervals()
         {
@@ -35,11 +35,6 @@ namespace PicoPlacaPredictorLib.BusinessLogic
             };
 
             return ecuadorPublicHolidays;
-        }
-
-        public override bool IsThisLawApplicableOnWeekends()
-        {
-            return true;
         }
 
         public override Dictionary<int, WeekDay> GetPlacasDayOff()

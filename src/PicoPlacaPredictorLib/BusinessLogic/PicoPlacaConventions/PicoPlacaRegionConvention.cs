@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PicoPlacaPredictorLib.BusinessLogic
+namespace PicoPlacaPredictorLib.BusinessLogic.PicoPlacaConventions
 {
     public abstract class PicoPlacaRegionConvention
     {

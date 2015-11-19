@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using PicoPlacaPredictorLib.Models;
 
-namespace PicoPlacaPredictorLib.BusinessLogic
+namespace PicoPlacaPredictorLib.BusinessLogic.PicoPlacaConventions
 {
     public class EcuadorPicoPlacaConvention : PicoPlacaRegionConvention
     {

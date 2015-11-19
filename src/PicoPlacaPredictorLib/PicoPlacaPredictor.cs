@@ -1,4 +1,4 @@
-﻿using PicoPlacaPredictorLib.BusinessLogic;
+﻿using PicoPlacaPredictorLib.BusinessLogic.PicoPlacaConventions;
 using PicoPlacaPredictorLib.Models;
 using System;
 using System.Collections.Generic;
@@ -19,28 +19,21 @@ namespace PicoPlacaPredictorLib
 
         public bool CarCanBeOnTheRoad(string plateNumber, string date, Time time)
         {
-            try
-            {
-                Date datetime = new Date(date);
-                if (IsPublicHoliday(datetime))
-                    return true;
-
-                if (TimeOutOfIntervals(time))
-                    return true;
-
-                int lastNumber = new PlateNumber(plateNumber).LastNumber;
-                var placasDayOff = PicoPlacaRegionConvention.GetPlacasDayOff();
-                if (placasDayOff.ContainsKey(lastNumber) && placasDayOff[lastNumber] == time.WeekDay)
-                    return false;
-
+            Date datetime = new Date(date);
+            if (IsPublicHoliday(datetime))
                 return true;
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
 
+            if (TimeOutOfIntervals(time))
+                return true;
+
+            int lastNumber = new PlateNumber(plateNumber).LastNumber;
+            var placasDayOff = PicoPlacaRegionConvention.GetPlacasDayOff();
+            if (placasDayOff.ContainsKey(lastNumber) && placasDayOff[lastNumber] == time.WeekDay)
+                return false;
+
+            return true;
         }
+
         private bool IsPublicHoliday(Date datetime)
         {
             foreach (var holiday in PicoPlacaRegionConvention.GetPublicHolidays())

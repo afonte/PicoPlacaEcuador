@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace PicoPlacaPredictorLib.BusinessLogic
 {
-    public abstract class PicoPlacaRegionConvenius
+    public abstract class PicoPlacaRegionConvention
     {
         public abstract List<HoursInterval> GetStopIntervals();
         public abstract List<Date> GetPublicHolidays();

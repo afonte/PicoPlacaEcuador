@@ -52,6 +52,14 @@
   <ItemGroup>
     <Compile Include="PicoPlacaPredictorTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UnitTests\DateTests.cs" />
+    <Compile Include="UnitTests\PlateNumberTests.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PicoPlacaPredictorLib\PicoPlacaPredictorLib.csproj">
+      <Project>{a120e587-da0b-4f4b-a483-0b4ada58afd9}</Project>
+      <Name>PicoPlacaPredictorLib</Name>
+    </ProjectReference>
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">

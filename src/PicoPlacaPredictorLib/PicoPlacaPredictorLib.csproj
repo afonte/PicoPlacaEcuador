@@ -40,6 +40,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BusinessLogic\PicoPlacaRegionConvenius.cs" />
+    <Compile Include="Models\Date.cs" />
+    <Compile Include="Models\HoursInterval.cs" />
+    <Compile Include="Models\PlateNumber.cs" />
+    <Compile Include="Models\Time.cs" />
+    <Compile Include="Models\TimeHour.cs" />
+    <Compile Include="Models\WeekDay.cs" />
     <Compile Include="PicoPlacaPredictor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -5,6 +5,6 @@ A law for helping to decrease the traffic in the cities has been adopted by seve
 This project provides a predictor tool to determine if one vehicle can be on the road at certain time of the day in Ecuador. 
 
 Configuration:
-You should open this project in VisualStudio 2015.
-You won't need any additional dependencies.
+You should install Microsoft Framework 3.5 to run this project. You are able to open the solution in VisualStudio.net
+You do not need any additional dependencies.
 
